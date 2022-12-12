@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Lucky Jack</string>
+
+    <string name="facebook_ID">514918883880261</string>
+    <string name="facebook_token">c57c4ea5ecc22694a865cb3f689dcc9e</string>
+
+    <string name="secure_get_parametr">AXUv7w5kRx</string>
+    <string name="secure_key">R5p0rhJIfv</string>
+    <string name="dev_tmz_key">FaVIfEAlxS</string>
+    <string name="adb_key">tOcGvJVfQ9</string>
+    <string name="referrer_key">1ahnfM9yIR</string>
+    <string name="gadid_key">ZydKza50eZ</string>
+    <string name="deeplink_key">Gj2ldMbWQb</string>
+    <string name="source_key">qZVngSl3m8</string>
+    <string name="af_id_key">o6PcPaTVxp</string>
+    <string name="adset_id_key">C9u0WCmS3z</string>
+    <string name="campaign_id_key">pN50DlL40G</string>
+    <string name="app_campaign_key">wCHcNFlWHD</string>
+    <string name="adset_key">df0V2cCSaF</string>
+    <string name="adgroup_key">lBZuLEfXzo</string>
+    <string name="orig_cost_key">B4k4dffOGL</string>
+    <string name="af_siteid_key">3k8PZbWAdq</string>
+
+    <string name="start">Start</string>
+    <string name="spin">Spin</string>
+    <string name="credits_d">Credits %d</string>
+
+    <string name="_200">200</string>
+    <string name="_100">100</string>
+    <string name="_300">300</string>
+    <string name="_400">400</string>
+    <string name="_500">500</string>
+    <string name="_600">600</string>
+    <string name="_700">700</string>
+    <string name="_800">800</string>
+    <string name="_900">900</string>
+    <string name="choose_your_credits">Choose your credits:</string>
+
+
+</resources>

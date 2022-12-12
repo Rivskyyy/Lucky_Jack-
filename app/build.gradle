@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+
+}
+
+android {
+    namespace 'com.example.luckyjack'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.luckyjack"
+        minSdk 24
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.activity:activity-ktx:1.5.1'
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //OneSignal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    //Ads-Identifier
+    implementation 'androidx.ads:ads-identifier:1.0.0-alpha04'
+    // Used for the calls to addCallback() in the snippets on this page.
+    implementation("com.google.guava:guava:28.0-android")
+
+    //AppFlyer
+    implementation 'com.appsflyer:af-android-sdk:6.9.0'
+    //Lottie
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    //Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:14.1.0'
+
+    //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+
+    //gson convertor   -> need to delete Okhttp
+    implementation 'com.squareup.retrofit2:converter-gson'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //Retrofit      -> need top delete Okhttp
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    //Okhhtps    -> need to delete Retrofit
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+
+}
