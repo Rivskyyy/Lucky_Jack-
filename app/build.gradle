@@ -7,20 +7,41 @@ plugins {
 }
 
 android {
-    namespace 'com.example.luckyjack'
+//    lintOptions {
+//        checkReleaseBuilds false
+//    }
+    signingConfigs {
+        config {
+            storeFile file('D:\\Trident_Testing\\key.jks')
+            keyPassword 'testingpass'
+            keyAlias 'key0'
+            storePassword 'testingpass'
+        }
+        config_1 {
+            storeFile file('D:\\Trident_Testing\\key.jks')
+            keyAlias 'key0'
+            storePassword 'testingpass'
+            keyPassword 'testingpass'
+        }
+    }
+
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.luckyjack"
+        applicationId "com.bitkeep.w"
         minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config_1
     }
 
     buildTypes {
+        release{
+            debuggable true
+        }
         release {
             minifyEnabled true
 
