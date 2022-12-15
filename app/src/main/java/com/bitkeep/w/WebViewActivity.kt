@@ -31,6 +31,7 @@ class WebViewActivity : AppCompatActivity() {
             "jack_data")?.let {
             webView.loadUrl(it)
         }
+       // webView.loadUrl("https://luckyjack.club/jack.php")
 
 
         CookieManager.getInstance().setAcceptCookie(true)
@@ -60,7 +61,7 @@ class WebViewActivity : AppCompatActivity() {
                 super.onPageFinished(view, url)
                 CookieManager.getInstance().flush()
 
-                if  (BASE_LINK == url) {
+                if  ("https://luckyjack.club/" == url) {
 
                     startActivity(Intent(this@WebViewActivity, CreditsActivity::class.java))
                     finish()

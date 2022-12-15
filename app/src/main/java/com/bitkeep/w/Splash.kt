@@ -12,7 +12,7 @@ class Splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-      // startActivity(Intent(this, Load::class.java))
+     //  startActivity(Intent(this, Load::class.java))
       if ( startApp())   {
           startActivity(Intent(this, Load::class.java))
       } else{
